@@ -1,0 +1,110 @@
+n = 4, k = 2
+1. Bước 1:
+
+    start = 1, n = 4, k = 2, combination = []
+Vòng lặp từ i = 1 đến 4 - 2 + 1 = 3.
+
+2. Bước 2:
+
+    i = 1
+    Thêm 1 vào combination: combination = [1]
+Gọi đệ quy: generateCombinations(2, 4, 1, [1], result)
+
+3. Bước 3:
+
+    start = 2, n = 4, k = 1, combination = [1]
+Vòng lặp từ i = 2 đến 4 - 1 + 1 = 4.
+
+4. Bước 4:
+
+    i = 2
+    Thêm 2 vào combination: combination = [1, 2]
+Gọi đệ quy: generateCombinations(3, 4, 0, [1, 2], result)
+
+5. Bước 5:
+
+    start = 3, n = 4, k = 0, combination = [1, 2]
+k = 0, thêm combination vào result: result = [[1, 2]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = [1]
+
+6. Bước 6:
+
+    i = 3
+    Thêm 3 vào combination: combination = [1, 3]
+Gọi đệ quy: generateCombinations(4, 4, 0, [1, 3], result)
+
+7. Bước 7:
+
+    start = 4, n = 4, k = 0, combination = [1, 3]
+k = 0, thêm combination vào result: result = [[1, 2], [1, 3]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = [1]
+
+8. Bước 8:
+
+    i = 4
+    Thêm 4 vào combination: combination = [1, 4]
+Gọi đệ quy: generateCombinations(5, 4, 0, [1, 4], result)
+
+9. Bước 9:
+
+    start = 5, n = 4, k = 0, combination = [1, 4]
+k = 0, thêm combination vào result: result = [[1, 2], [1, 3], [1, 4]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = []
+
+10. Bước 10:
+
+    i = 2
+    Thêm 2 vào combination: combination = [2]
+Gọi đệ quy: generateCombinations(3, 4, 1, [2], result)
+
+11. Bước 11:
+
+    start = 3, n = 4, k = 1, combination = [2]
+Vòng lặp từ i = 3 đến 4 - 1 + 1 = 4.
+
+12. Bước 12:
+
+    i = 3
+    Thêm 3 vào combination: combination = [2, 3]
+Gọi đệ quy: generateCombinations(4, 4, 0, [2, 3], result)
+
+13. Bước 13:
+
+    start = 4, n = 4, k = 0, combination = [2, 3]
+k = 0, thêm combination vào result: result = [[1, 2], [1, 3], [1, 4], [2, 3]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = [2]
+
+14. Bước 14:
+
+    i = 4
+    Thêm 4 vào combination: combination = [2, 4]
+Gọi đệ quy: generateCombinations(5, 4, 0, [2, 4], result)
+
+15. Bước 15:
+
+    start = 5, n = 4, k = 0, combination = [2, 4]
+k = 0, thêm combination vào result: result = [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = []
+
+16. Bước 16:
+
+    i = 3
+    Thêm 3 vào combination: combination = [3]
+Gọi đệ quy: generateCombinations(4, 4, 1, [3], result)
+
+17. Bước 17:
+
+    start = 4, n = 4, k = 1, combination = [3]
+Vòng lặp từ i = 4 đến 4 - 1 + 1 = 4.
+
+18. Bước 18:
+
+    i = 4
+    Thêm 4 vào combination: combination = [3, 4]
+Gọi đệ quy: generateCombinations(5, 4, 0, [3, 4], result)
+
+19. Bước 19:
+
+    start = 5, n = 4, k = 0, combination = [3, 4]
+k = 0, thêm combination vào result: result = [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
+Trở lại bước trước và loại bỏ phần tử cuối cùng: combination = []
