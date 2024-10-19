@@ -1,5 +1,8 @@
 package array.max_subarray_after_delete;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Solution {
   public int longestSubarray(int[] nums) {
     int left = 0, countZeros = 0, max = 0;
@@ -11,6 +14,7 @@ public class Solution {
       }
       max = Math.max(max, right - left);
     }
+    Arrays.stream(nums).max().getAsInt();
     return max;
   }
 }
