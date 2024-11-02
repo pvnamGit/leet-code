@@ -1,4 +1,4 @@
-package stack.implement_queue;
+package queue.implement_queue;
 
 import java.util.Stack;
 

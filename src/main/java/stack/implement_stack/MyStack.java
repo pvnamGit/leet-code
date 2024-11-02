@@ -1,8 +1,6 @@
-package queue.implement_stack;
+package stack.implement_stack;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class MyStack {
