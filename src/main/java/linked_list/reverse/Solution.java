@@ -8,8 +8,8 @@ public class Solution {
         ListNode next = null;
         ListNode curr = head;
         while (curr != null) {
-            next = curr.getNext();
-            curr.setNext(prev);
+            next = curr.next;
+            curr.next = (prev);
             prev = curr;
             curr = next;
         }
